@@ -1,0 +1,28 @@
+@import '~foundation-sites/scss/foundation';
+@import "reset";
+@import "base";
+@import "public";
+
+// --------------- custom faoundation settings here --------------------
+$global-margin: 20px;
+$global-padding: 20px;
+$prototype-spacing-breakpoints: true;
+$prototype-spacers-count: 8;
+$breakpoint-classes: (small medium large xlarge xxlarge);
+$breakpoints: (
+	small: 0px,
+	medium: 640px,
+	large: 1025px,
+	xlarge: 1200px,
+	xxlarge: 1600px,
+);
+
+@include foundation-xy-grid-classes;
+@include foundation-prototype-spacing;
+@include foundation-flex-classes;
+@include foundation-visibility-classes;
+@include foundation-text-alignment;
+
+.grid-y>.shrink{
+	width: auto;
+}
